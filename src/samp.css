@@ -120,6 +120,11 @@
     font-size: 0.95rem;
   }
 
+  .result{
+    width: 98vw;
+    margin:auto;
+  }
+  
   .name-form input {
     font-size: 0.95rem;
   }
