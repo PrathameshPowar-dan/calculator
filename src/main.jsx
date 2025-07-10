@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/name" element={<NameEntry />} />
-        <Route path="/name/dimensions" element={<DimensionsForm />} />
+        <Route path="/random" element={<NameEntry />} />
+        <Route path="/random/dimensions" element={<DimensionsForm />} />
 
       </Routes>
     </BrowserRouter>
