@@ -1,0 +1,134 @@
+/* 📽 Background Video */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* 🧱 Overlay Container (used in both pages) */
+.name-overlay {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 📝 Shared Form Style (used in both NameEntry and DimensionsForm) */
+.name-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.42);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(6px);
+}
+
+.name-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.name-form button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.name-form button:hover {
+  background-color: #45a049;
+}
+
+/* 👋 Heading Style for both pages */
+.dimension-heading,
+.name-form h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto 20px;
+}
+
+.dimension-heading{
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* 💬 Result Section */
+.result {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px 35px;
+  border-radius: 10px;
+  color: #fff;
+  max-width: 400px;
+  width: 90%;
+  text-align: left;
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Result Heading */
+.result h2 {
+  font-size: 1.7rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(4px);
+}
+
+/* ✅ Animation for result section */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 480px) {
+  .dimension-heading,
+  .name-form h2,
+  .result h2 {
+    font-size: 1.4rem;
+    padding: 8px 16px;
+  }
+
+  .name-form,
+  .result {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .name-form input {
+    font-size: 0.95rem;
+  }
+}
