@@ -1,4 +1,3 @@
-/* 📽 Background Video */
 .bg-video {
   position: fixed;
   top: 0;
@@ -9,7 +8,6 @@
   z-index: -1;
 }
 
-/* 🧱 Overlay Container (used in both pages) */
 .name-overlay {
   position: relative;
   z-index: 1;
@@ -24,7 +22,6 @@
   text-align: center;
 }
 
-/* 📝 Shared Form Style (used in both NameEntry and DimensionsForm) */
 .name-form {
   display: flex;
   flex-direction: column;
@@ -60,7 +57,6 @@
   background-color: #45a049;
 }
 
-/* 👋 Heading Style for both pages */
 .dimension-heading,
 .name-form h2 {
   font-size: 2rem;
@@ -76,7 +72,6 @@
     background-color: rgba(0, 0, 0, 0.45);
 }
 
-/* 💬 Result Section */
 .result {
   background: rgba(0, 0, 0, 0.6);
   padding: 30px 35px;
@@ -89,7 +84,6 @@
   animation: fadeIn 0.4s ease-in-out;
 }
 
-/* Result Heading */
 .result h2 {
   font-size: 1.7rem;
   color: #ffffff;
@@ -101,7 +95,6 @@
   backdrop-filter: blur(4px);
 }
 
-/* ✅ Animation for result section */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -113,7 +106,6 @@
   }
 }
 
-/* 📱 Mobile Responsiveness */
 @media (max-width: 480px) {
   .dimension-heading,
   .name-form h2,

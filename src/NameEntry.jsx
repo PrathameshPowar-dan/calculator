@@ -9,7 +9,7 @@ function NameEntry() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/random/dimensions", { state: { name } }); // ← pass name as prop
+    navigate("/random/dimensions", { state: { name } });
   };
 
   return (
