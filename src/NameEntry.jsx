@@ -15,7 +15,7 @@ function NameEntry() {
   return (
     <>
       <video autoPlay loop muted playsInline className="bg-video">
-        <source src="public\building.mp4" type="video/mp4" />
+        <source src="/building.mp4" type="video/mp4" />
       </video>
       <div className="name-overlay">
         <form onSubmit={handleSubmit} className="name-form">
