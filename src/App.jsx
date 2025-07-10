@@ -74,7 +74,7 @@ function App() {
     <div className="calculator">
       <div className="display">
         <input type="text" value={expression} placeholder="0" readOnly />
-        <div className="result">{result}</div>
+        <div className="resultt">{result}</div>
       </div>
       <div className="buttons">
         {buttonValues.map((btn, i) => (
